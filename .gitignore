@@ -1,0 +1,24 @@
+# build
+target/
+
+# secrets & local state — real state lives in ~/.insta, never in the repo
+.env
+.env.*
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+data/
+.insta/
+
+# logs & OS
+*.log
+logs/
+.DS_Store
+
+# local tooling
+.claude/settings.local.json
+
+# planning docs and browser capture logs stay local
+docs/superpowers/
+.playwright-mcp/
